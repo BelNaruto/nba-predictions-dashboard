@@ -1,0 +1,1 @@
+{ "name": "nba-predictions-dashboard", "version": "1.0.0", "description": "NBA predictions: win probabilities, projected scores, title odds and power rankings", "main": "server.js", "scripts": { "start": "node server.js" }, "engines": { "node": ">=18" }, "keywords": ["nba","predictions","basketball","win-probability","power-rankings"], "license": "MIT" }
