@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NBA Predictions Today – Win Probabilities, Projected Scores & Title Odds</title>
+<meta name="description" content="NBA predictions for every game: win probability, projected score, spread and total, model vs betting market edge, championship and playoff odds, and power rankings.">
+<style>
+  :root { --bg:#f5f6f8; --card:#fff; --line:#e4e7ec; --text:#101828; --muted:#667085; --accent:#1d4ed8; --good:#16a34a; --bad:#dc2626; --amber:#f59e0b; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:var(--text); }
+  header { background:#0b1324; color:#fff; padding:18px 26px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  header h1 { margin:0; font-size:19px; }
+  .demo { background:var(--amber); color:#111; font-weight:700; font-size:12px; padding:3px 8px; border-radius:6px; display:none; }
+  .bar { max-width:1200px; margin:16px auto 0; padding:0 20px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .tabs { display:flex; gap:6px; flex-wrap:wrap; }
+  .tabs button { border:1px solid var(--line); background:#fff; padding:8px 14px; border-radius:999px; cursor:pointer; font-weight:700; font-size:13px; }
+  .tabs button.on { background:#0b1324; color:#fff; border-color:#0b1324; }
+  select, input { padding:8px 10px; border:1px solid var(--line); border-radius:9px; background:#fff; font-size:13px; }
+  .wrap { max-width:1200px; margin:14px auto 40px; padding:0 20px; }
+  .games { display:grid; gap:14px; grid-template-columns:repeat(auto-fill,minmax(360px,1fr)); }
+  .g { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; }
+  .g .top { display:flex; justify-content:space-between; font-size:12px; color:var(--muted); }
+  .live { color:var(--bad); font-weight:800; }
+  .team { display:flex; align-items:center; gap:10px; margin-top:10px; }
+  .logo { width:34px; height:34px; border-radius:50%; display:grid; place-items:center; color:#fff; font-weight:800; font-size:11px; flex:none; object-fit:contain; background:#eef1f5; }
+  .team .nm { flex:1; font-weight:700; }
+  .team .sc { font-size:22px; font-weight:800; min-width:44px; text-align:right; }
+  .team .wp { width:56px; text-align:right; font-weight:800; }
+  .prob { display:flex; height:10px; border-radius:6px; overflow:hidden; margin:12px 0 8px; background:#eef1f5; }
+  .kv { display:grid; grid-template-columns:repeat(4,1fr); gap:6px; margin-top:8px; }
+  .kv div { background:#f8fafc; border:1px solid var(--line); border-radius:8px; padding:6px 8px; }
+  .kv b { display:block; font-size:15px; } .kv span { font-size:11px; color:var(--muted); }
+  .tag { display:inline-block; font-size:11px; font-weight:800; padding:2px 8px; border-radius:999px; }
+  .t-high { background:#dcfce7; color:#166534; } .t-medium { background:#fef9c3; color:#854d0e; } .t-low { background:#f1f5f9; color:#475569; }
+  .value { background:#dbeafe; color:#1e40af; } .ok { background:#dcfce7; color:#166534; } .miss { background:#fee2e2; color:#991b1b; }
+  table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:14px; overflow:hidden; font-variant-numeric:tabular-nums; }
+  th, td { padding:9px 10px; border-bottom:1px solid var(--line); text-align:right; }
+  th:nth-child(-n+2), td:nth-child(-n+2) { text-align:left; }
+  th { font-size:11px; color:var(--muted); text-transform:uppercase; background:#f8fafc; }
+  .pbar { display:inline-block; width:70px; height:6px; background:#eef1f5; border-radius:4px; vertical-align:middle; margin-left:6px; overflow:hidden; }
+  .pbar i { display:block; height:100%; background:var(--accent); }
+  .summary { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:12px; }
+  .summary div { background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px 14px; }
+  .summary b { font-size:20px; display:block; }
+  .empty { text-align:center; color:var(--muted); padding:60px; }
+  .small { font-size:12px; color:var(--muted); }
+  footer { text-align:center; color:var(--muted); font-size:12px; padding:0 20px 30px; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <h1>🔮 NBA Predictions Dashboard</h1>
+  <span style="opacity:.7;font-size:12px">Win probabilities · projected scores · model vs market · title odds</span>
+  <span class="demo" id="demo">DEMO MODE – sample data</span>
+</header>
+<div class="bar">
+  <div class="tabs" id="tabs">
+    <button data-v="games" class="on">📅 Game predictions</button>
+    <button data-v="season">🏆 Title & playoff odds</button>
+    <button data-v="power">📊 Power rankings</button>
+    <button data-v="accuracy">🎯 Model accuracy</button>
+  </div>
+  <select id="league"><option value="nba">NBA</option><option value="wnba">WNBA</option><option value="gleague">G League</option><option value="ncaam">NCAA Men</option><option value="ncaaw">NCAA Women</option></select>
+  <input type="date" id="date">
+</div>
+<main class="wrap" id="out"><div class="empty">Loading…</div></main>
+<footer>Data: <a href="https://rapidapi.com/belchiorarkad-FqvHs2EDOtP/api/api-basketball-nba" target="_blank" rel="noopener">Basketball API (NBA, WNBA, G League, NCAA)</a> · Support: <a href="https://t.me/pintoflow" target="_blank" rel="noopener">Telegram @pintoflow</a><br>For information and entertainment. Not betting advice. Not affiliated with the NBA.</footer>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const pct = (x, d = 0) => x == null ? '–' : (x * 100).toFixed(d) + '%';
+const ml = (o) => o == null ? '–' : o > 0 ? '+' + o : String(o);
+let view = 'games';
+
+async function api(route, params = {}) {
+  params.league = $('league').value;
+  const r = await fetch('/api' + route + '?' + new URLSearchParams(params));
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok || j.error) throw new Error(j.error?.message || `Error ${r.status}`);
+  return j;
+}
+const logo = (t) => t?.logo ? `<img class="logo" src="${esc(t.logo)}" alt="">` : `<span class="logo" style="background:${esc(t?.color || '#64748b')}">${esc(t?.abbreviation || '?')}</span>`;
+
+function gameCard(g) {
+  const p = g.prediction || {}, h = g.home, a = g.away, st = g.status || {};
+  const hp = p.home?.winProbability, ap = p.away?.winProbability;
+  const live = st.state === 'in', done = st.completed;
+  let result = '';
+  if (done && p.predictedWinnerId) {
+    const winner = h.winner ? h.id : a.winner ? a.id : null;
+    result = winner ? `<span class="tag ${winner === p.predictedWinnerId ? 'ok' : 'miss'}">${winner === p.predictedWinnerId ? '✓ Pick correct' : '✗ Pick missed'}</span>` : '';
+  }
+  const m = p.market, vs = m?.edge?.valueSide;
+  const row = (t, side) => `<div class="team">${logo(t)}<span class="nm">${esc(t.name)} <span style="color:var(--muted);font-weight:500;font-size:12px">${esc(t.record || '')}</span></span>
+      ${t.score != null ? `<span class="sc">${t.score}</span>` : ''}<span class="wp" style="color:${p.predictedWinnerId === t.id ? 'var(--accent)' : 'var(--muted)'}">${pct(p[side]?.winProbability)}</span></div>`;
+  return `<div class="g">
+    <div class="top"><span class="${live ? 'live' : ''}">${live ? '● LIVE ' : ''}${esc(st.shortDetail || '')} · ${g.date ? new Date(g.date).toLocaleString([], { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : ''}</span>
+      <span>${p.confidence ? `<span class="tag t-${p.confidence}">${p.confidence} confidence</span>` : ''} ${result}</span></div>
+    ${row(a, 'away')}${row(h, 'home')}
+    ${hp != null ? `<div class="prob"><div style="width:${ap * 100}%;background:${esc(a.color || '#94a3b8')}"></div><div style="flex:1;background:${esc(h.color || '#1d4ed8')}"></div></div>` : ''}
+    <div class="kv">
+      <div><b>${p.away?.projectedScore != null ? Math.round(p.away.projectedScore) : '–'}–${p.home?.projectedScore != null ? Math.round(p.home.projectedScore) : '–'}</b><span>Projected score</span></div>
+      <div><b>${p.projectedSpread != null ? (p.projectedSpread > 0 ? '+' : '') + p.projectedSpread : '–'}</b><span>Spread (home)</span></div>
+      <div><b>${p.projectedTotal ?? '–'}</b><span>Total</span></div>
+      <div><b>${ml(p.home?.fairMoneyLine)}</b><span>Fair ML (home)</span></div>
+    </div>
+    ${m ? `<div style="margin-top:10px;font-size:12px;color:var(--muted)">Market: home ${pct(m.homeWinProbability)} · spread ${m.homeSpread > 0 ? '+' : ''}${m.homeSpread} · total ${m.total}
+      ${vs ? ` · <span class="tag value">Value: ${esc(vs === 'home' ? h.abbreviation : a.abbreviation)} (${pct(Math.abs(m.edge[vs]), 1)} edge)</span>` : ''}</div>` : '<div style="margin-top:10px;font-size:12px;color:var(--muted)">No betting market yet – model only.</div>'}
+  </div>`;
+}
+
+async function load() {
+  const out = $('out');
+  out.innerHTML = '<div class="empty">Loading…</div>';
+  $('date').style.display = view === 'games' ? '' : 'none';
+  try {
+    if (view === 'games') {
+      const params = $('date').value ? { date: $('date').value.replaceAll('-', '') } : {};
+      const { data, meta } = await api('/v2/predictions', params);
+      if (!data?.length) return (out.innerHTML = '<div class="empty">No games on this date.</div>');
+      const rec = meta?.record;
+      out.innerHTML = `<div class="summary"><div><b>${data.length}</b><span class="small">games</span></div>
+        ${rec?.total ? `<div><b>${rec.correct}/${rec.total}</b><span class="small">picks correct so far</span></div>` : ''}
+        <div><b>${data.filter((g) => g.prediction?.market?.edge?.valueSide).length}</b><span class="small">value spots vs market</span></div></div>
+        <div class="games">${data.map(gameCard).join('')}</div>`;
+    } else if (view === 'season') {
+      const { data } = await api('/v2/predictions/season');
+      const teams = (data.teams || []).filter((t) => t.conference).sort((a, b) => (b.probabilities?.champion ?? 0) - (a.probabilities?.champion ?? 0) || b.projectedWins - a.projectedWins);
+      out.innerHTML = `<p style="color:var(--muted);margin:0 0 10px">${data.simulations?.toLocaleString?.() || ''} simulations of the remaining ${data.remainingGames ?? ''} games · season ${esc(data.season)}</p>
+      <table><tr><th>#</th><th>Team</th><th>Record</th><th>Proj. W-L</th><th>Playoffs</th><th>Conf. finals</th><th>Finals</th><th>Champion</th></tr>
+      ${teams.map((t, i) => `<tr><td>${i + 1}</td><td><span style="display:inline-flex;gap:8px;align-items:center">${logo(t.team)}${esc(t.team.name)}</span></td><td>${esc(t.currentRecord)}</td>
+        <td>${t.projectedWins}-${t.projectedLosses}</td><td>${pct(t.probabilities?.makePlayoffs)}</td><td>${pct(t.probabilities?.conferenceFinals)}</td>
+        <td>${pct(t.probabilities?.finals)}</td><td><b>${pct(t.probabilities?.champion, 1)}</b><span class="pbar"><i style="width:${Math.min(100, (t.probabilities?.champion || 0) * 300)}%"></i></span></td></tr>`).join('')}</table>`;
+    } else if (view === 'power') {
+      const { data } = await api('/v2/power-rankings');
+      out.innerHTML = `<table><tr><th>Rank</th><th>Team</th><th>Power</th><th>Elo</th><th>Δ Elo</th><th>Net rtg</th><th>Record</th><th>Last 10</th><th>Streak</th></tr>
+      ${data.map((r) => `<tr><td><b>${r.rank}</b></td><td><span style="display:inline-flex;gap:8px;align-items:center">${logo(r.team)}${esc(r.team?.name)}</span></td><td>${r.powerScore}</td><td>${r.elo}</td>
+        <td style="color:${r.eloChange >= 0 ? 'var(--good)' : 'var(--bad)'}">${r.eloChange > 0 ? '+' : ''}${r.eloChange}</td><td>${r.netRating > 0 ? '+' : ''}${r.netRating}</td><td>${esc(r.record)}</td><td>${esc(r.last10)}</td><td>${esc(r.streak || '–')}</td></tr>`).join('')}</table>`;
+    } else {
+      const { data } = await api('/v2/predictions/accuracy');
+      const blocks = [];
+      (function walk(o, name) {
+        if (!o || typeof o !== 'object') return;
+        if ('accuracy' in o) blocks.push([name, o]);
+        Object.entries(o).forEach(([k, v]) => k !== 'baseline' && walk(v, k));
+      })(data, 'model');
+      out.innerHTML = blocks.length ? `<div class="games">${blocks.map(([n, b]) => `<div class="g"><div class="top"><span>${esc(b.season || n)}</span><span>${b.games ?? ''} games</span></div>
+        <div class="kv"><div><b>${pct(b.accuracy, 1)}</b><span>Accuracy</span></div><div><b>${b.brierScore ?? '–'}</b><span>Brier score</span></div>
+        <div><b>${b.logLoss ?? '–'}</b><span>Log loss</span></div><div><b>${pct(b.baseline?.accuracy, 1)}</b><span>Home-always baseline</span></div></div></div>`).join('')}</div>
+        <p style="color:var(--muted)">Measured on games the model hadn't seen. Lower Brier score and log loss are better.</p>` : `<pre>${esc(JSON.stringify(data, null, 2))}</pre>`;
+    }
+  } catch (e) { out.innerHTML = `<div class="empty">${esc(e.message)}</div>`; }
+}
+
+$('tabs').addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b) return;
+  document.querySelectorAll('#tabs button').forEach((x) => x.classList.toggle('on', x === b));
+  view = b.dataset.v; load();
+});
+['league', 'date'].forEach((id) => $(id).addEventListener('change', load));
+fetch('/api/config').then((r) => r.json()).then((c) => { if (c.demo) $('demo').style.display = 'inline-block'; });
+load();
+</script>
+</body>
+</html>
