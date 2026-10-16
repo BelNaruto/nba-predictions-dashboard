@@ -1,0 +1,28 @@
+{
+ "data": {
+  "currentSeason": {
+   "season": "2026-27",
+   "games": 0,
+   "accuracy": null,
+   "brierScore": null,
+   "logLoss": null
+  },
+  "previousSeason": {
+   "season": "2025-26",
+   "games": 1230,
+   "accuracy": 0.668,
+   "brierScore": 0.211,
+   "logLoss": 0.611,
+   "baseline": {
+    "name": "home team always wins",
+    "accuracy": 0.551
+   }
+  }
+ },
+ "meta": {
+  "league": "nba",
+  "generatedAt": "2026-10-16T12:00:00Z",
+  "cacheTtlSeconds": 300,
+  "_note": "SAMPLE DATA for demo mode \u2013 fictional teams"
+ }
+}

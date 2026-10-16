@@ -1,0 +1,665 @@
+{
+ "data": [
+  {
+   "id": "900",
+   "date": "2026-10-21T23:00Z",
+   "name": "Mesa Coyotes at Harbor City Sharks",
+   "shortName": "MES @ HBC",
+   "status": {
+    "state": "post",
+    "name": "STATUS_FINAL",
+    "detail": "Final",
+    "shortDetail": "Final",
+    "completed": true,
+    "period": 4,
+    "clock": "0:00"
+   },
+   "venue": {
+    "name": "Sharks Arena",
+    "city": "Harbor"
+   },
+   "broadcasts": [
+    "Demo TV"
+   ],
+   "home": {
+    "id": "1",
+    "abbreviation": "HBC",
+    "name": "Harbor City Sharks",
+    "shortName": "Sharks",
+    "color": "#0ea5e9",
+    "logo": null,
+    "homeAway": "home",
+    "score": 118,
+    "winner": true,
+    "record": "1-0",
+    "linescores": [],
+    "leaders": [
+     {
+      "category": "points",
+      "label": "Points",
+      "player": "Demo Guard",
+      "playerId": "1",
+      "value": "37"
+     }
+    ]
+   },
+   "away": {
+    "id": "2",
+    "abbreviation": "MES",
+    "name": "Mesa Coyotes",
+    "shortName": "Coyotes",
+    "color": "#f97316",
+    "logo": null,
+    "homeAway": "away",
+    "score": 104,
+    "winner": false,
+    "record": "1-3",
+    "linescores": [],
+    "leaders": [
+     {
+      "category": "points",
+      "label": "Points",
+      "player": "Sample Forward",
+      "playerId": "2",
+      "value": "23"
+     }
+    ]
+   },
+   "odds": null,
+   "prediction": {
+    "home": {
+     "id": "1",
+     "abbreviation": "HBC",
+     "name": "Harbor City Sharks",
+     "logo": null,
+     "winProbability": 0.599,
+     "modelWinProbability": 0.6521,
+     "fairMoneyLine": -149,
+     "projectedScore": 117.6,
+     "elo": 1513,
+     "netRating": 3.7,
+     "restDays": 1
+    },
+    "away": {
+     "id": "2",
+     "abbreviation": "MES",
+     "name": "Mesa Coyotes",
+     "logo": null,
+     "winProbability": 0.401,
+     "modelWinProbability": 0.3479,
+     "fairMoneyLine": 149,
+     "projectedScore": 111.7,
+     "elo": 1478,
+     "netRating": -0.4,
+     "restDays": 0
+    },
+    "predictedWinnerId": "1",
+    "projectedSpread": -5.9,
+    "projectedTotal": 229.3,
+    "homeCoverProbabilityAtMarket": 0.4952,
+    "overProbabilityAtMarket": 0.4224,
+    "confidence": "low",
+    "factors": {
+     "eloSpread": 1.1,
+     "ratingSpread": 2.0,
+     "homeCourt": 1.7,
+     "restAdjustment": 0.5
+    },
+    "market": {
+     "homeWinProbability": 0.6422,
+     "awayWinProbability": 0.3578,
+     "bookmakerMargin": 0.045,
+     "homeSpread": -4.4,
+     "total": 226.3,
+     "edge": {
+      "home": -0.0432,
+      "away": 0.0432,
+      "valueSide": "away"
+     },
+     "spreadEdge": 2.0,
+     "totalEdge": 2.2
+    }
+   }
+  },
+  {
+   "id": "901",
+   "date": "2026-10-21T23:30Z",
+   "name": "Bayview Pelicans at Northfield Owls",
+   "shortName": "BAY @ NOR",
+   "status": {
+    "state": "post",
+    "name": "STATUS_FINAL",
+    "detail": "Final",
+    "shortDetail": "Final",
+    "completed": true,
+    "period": 4,
+    "clock": "0:00"
+   },
+   "venue": {
+    "name": "Owls Arena",
+    "city": "Northfield"
+   },
+   "broadcasts": [
+    "Demo TV"
+   ],
+   "home": {
+    "id": "3",
+    "abbreviation": "NOR",
+    "name": "Northfield Owls",
+    "shortName": "Owls",
+    "color": "#6366f1",
+    "logo": null,
+    "homeAway": "home",
+    "score": 109,
+    "winner": false,
+    "record": "1-1",
+    "linescores": [],
+    "leaders": [
+     {
+      "category": "points",
+      "label": "Points",
+      "player": "Demo Guard",
+      "playerId": "1",
+      "value": "26"
+     }
+    ]
+   },
+   "away": {
+    "id": "4",
+    "abbreviation": "BAY",
+    "name": "Bayview Pelicans",
+    "shortName": "Pelicans",
+    "color": "#14b8a6",
+    "logo": null,
+    "homeAway": "away",
+    "score": 113,
+    "winner": true,
+    "record": "1-3",
+    "linescores": [],
+    "leaders": [
+     {
+      "category": "points",
+      "label": "Points",
+      "player": "Sample Forward",
+      "playerId": "2",
+      "value": "31"
+     }
+    ]
+   },
+   "odds": null,
+   "prediction": {
+    "home": {
+     "id": "3",
+     "abbreviation": "NOR",
+     "name": "Northfield Owls",
+     "logo": null,
+     "winProbability": 0.4342,
+     "modelWinProbability": 0.3934,
+     "fairMoneyLine": 130,
+     "projectedScore": 119.9,
+     "elo": 1673,
+     "netRating": -5.9,
+     "restDays": 1
+    },
+    "away": {
+     "id": "4",
+     "abbreviation": "BAY",
+     "name": "Bayview Pelicans",
+     "logo": null,
+     "winProbability": 0.5658,
+     "modelWinProbability": 0.6066,
+     "fairMoneyLine": -130,
+     "projectedScore": 114.4,
+     "elo": 1695,
+     "netRating": 8.7,
+     "restDays": 0
+    },
+    "predictedWinnerId": "4",
+    "projectedSpread": -5.5,
+    "projectedTotal": 234.3,
+    "homeCoverProbabilityAtMarket": 0.4723,
+    "overProbabilityAtMarket": 0.6115,
+    "confidence": "low",
+    "factors": {
+     "eloSpread": 1.1,
+     "ratingSpread": 2.0,
+     "homeCourt": 1.7,
+     "restAdjustment": 0.5
+    },
+    "market": {
+     "homeWinProbability": 0.4877,
+     "awayWinProbability": 0.5123,
+     "bookmakerMargin": 0.045,
+     "homeSpread": -6.5,
+     "total": 236.3,
+     "edge": {
+      "home": -0.0535,
+      "away": 0.0535,
+      "valueSide": "away"
+     },
+     "spreadEdge": -2.2,
+     "totalEdge": -4.0
+    }
+   }
+  },
+  {
+   "id": "902",
+   "date": "2026-10-21T00:00Z",
+   "name": "Pinecrest Rangers at Ironton Forge",
+   "shortName": "PIN @ IRN",
+   "status": {
+    "state": "in",
+    "name": "STATUS_IN_PROGRESS",
+    "detail": "Q3 4:12",
+    "shortDetail": "Q3 4:12",
+    "completed": false,
+    "period": 3,
+    "clock": "4:12"
+   },
+   "venue": {
+    "name": "Forge Arena",
+    "city": "Ironton"
+   },
+   "broadcasts": [
+    "Demo TV"
+   ],
+   "home": {
+    "id": "5",
+    "abbreviation": "IRN",
+    "name": "Ironton Forge",
+    "shortName": "Forge",
+    "color": "#ef4444",
+    "logo": null,
+    "homeAway": "home",
+    "score": 78,
+    "winner": null,
+    "record": "0-2",
+    "linescores": [],
+    "leaders": []
+   },
+   "away": {
+    "id": "6",
+    "abbreviation": "PIN",
+    "name": "Pinecrest Rangers",
+    "shortName": "Rangers",
+    "color": "#22c55e",
+    "logo": null,
+    "homeAway": "away",
+    "score": 81,
+    "winner": null,
+    "record": "0-2",
+    "linescores": [],
+    "leaders": []
+   },
+   "odds": null,
+   "prediction": {
+    "home": {
+     "id": "5",
+     "abbreviation": "IRN",
+     "name": "Ironton Forge",
+     "logo": null,
+     "winProbability": 0.4434,
+     "modelWinProbability": 0.4009,
+     "fairMoneyLine": 126,
+     "projectedScore": 112.7,
+     "elo": 1466,
+     "netRating": -1.4,
+     "restDays": 2
+    },
+    "away": {
+     "id": "6",
+     "abbreviation": "PIN",
+     "name": "Pinecrest Rangers",
+     "logo": null,
+     "winProbability": 0.5566,
+     "modelWinProbability": 0.5991,
+     "fairMoneyLine": -126,
+     "projectedScore": 116.2,
+     "elo": 1573,
+     "netRating": 4.4,
+     "restDays": 0
+    },
+    "predictedWinnerId": "6",
+    "projectedSpread": 3.5,
+    "projectedTotal": 228.9,
+    "homeCoverProbabilityAtMarket": 0.5203,
+    "overProbabilityAtMarket": 0.555,
+    "confidence": "low",
+    "factors": {
+     "eloSpread": 1.1,
+     "ratingSpread": 2.0,
+     "homeCourt": 1.7,
+     "restAdjustment": 0.5
+    },
+    "market": {
+     "homeWinProbability": 0.3651,
+     "awayWinProbability": 0.6349,
+     "bookmakerMargin": 0.045,
+     "homeSpread": 3.5,
+     "total": 225.9,
+     "edge": {
+      "home": 0.0783,
+      "away": -0.0783,
+      "valueSide": "home"
+     },
+     "spreadEdge": 0.6,
+     "totalEdge": 1.7
+    }
+   }
+  },
+  {
+   "id": "903",
+   "date": "2026-10-22T00:30Z",
+   "name": "Riverbend Otters at Summit Peaks",
+   "shortName": "RIV @ SUM",
+   "status": {
+    "state": "pre",
+    "name": "STATUS_SCHEDULED",
+    "detail": "7:30 PM ET",
+    "shortDetail": "7:30 PM ET",
+    "completed": false,
+    "period": 0,
+    "clock": "0:00"
+   },
+   "venue": {
+    "name": "Peaks Arena",
+    "city": "Summit"
+   },
+   "broadcasts": [
+    "Demo TV"
+   ],
+   "home": {
+    "id": "7",
+    "abbreviation": "SUM",
+    "name": "Summit Peaks",
+    "shortName": "Peaks",
+    "color": "#a855f7",
+    "logo": null,
+    "homeAway": "home",
+    "score": null,
+    "winner": null,
+    "record": "2-3",
+    "linescores": [],
+    "leaders": []
+   },
+   "away": {
+    "id": "8",
+    "abbreviation": "RIV",
+    "name": "Riverbend Otters",
+    "shortName": "Otters",
+    "color": "#eab308",
+    "logo": null,
+    "homeAway": "away",
+    "score": null,
+    "winner": null,
+    "record": "0-2",
+    "linescores": [],
+    "leaders": []
+   },
+   "odds": null,
+   "prediction": {
+    "home": {
+     "id": "7",
+     "abbreviation": "SUM",
+     "name": "Summit Peaks",
+     "logo": null,
+     "winProbability": 0.7055,
+     "modelWinProbability": 0.6894,
+     "fairMoneyLine": -240,
+     "projectedScore": 108.2,
+     "elo": 1694,
+     "netRating": 8.3,
+     "restDays": 1
+    },
+    "away": {
+     "id": "8",
+     "abbreviation": "RIV",
+     "name": "Riverbend Otters",
+     "logo": null,
+     "winProbability": 0.2945,
+     "modelWinProbability": 0.3106,
+     "fairMoneyLine": 240,
+     "projectedScore": 102.4,
+     "elo": 1643,
+     "netRating": -2.3,
+     "restDays": 1
+    },
+    "predictedWinnerId": "7",
+    "projectedSpread": -5.8,
+    "projectedTotal": 210.6,
+    "homeCoverProbabilityAtMarket": 0.4861,
+    "overProbabilityAtMarket": 0.4781,
+    "confidence": "medium",
+    "factors": {
+     "eloSpread": 1.1,
+     "ratingSpread": 2.0,
+     "homeCourt": 1.7,
+     "restAdjustment": 0.5
+    },
+    "market": {
+     "homeWinProbability": 0.7196,
+     "awayWinProbability": 0.2804,
+     "bookmakerMargin": 0.045,
+     "homeSpread": -7.3,
+     "total": 212.6,
+     "edge": {
+      "home": -0.0141,
+      "away": 0.0141,
+      "valueSide": null
+     },
+     "spreadEdge": -2.7,
+     "totalEdge": -2.6
+    }
+   }
+  },
+  {
+   "id": "904",
+   "date": "2026-10-22T01:00Z",
+   "name": "Canyon Condors at Lakeside Loons",
+   "shortName": "CAN @ LAK",
+   "status": {
+    "state": "pre",
+    "name": "STATUS_SCHEDULED",
+    "detail": "7:30 PM ET",
+    "shortDetail": "7:30 PM ET",
+    "completed": false,
+    "period": 0,
+    "clock": "0:00"
+   },
+   "venue": {
+    "name": "Loons Arena",
+    "city": "Lakeside"
+   },
+   "broadcasts": [
+    "Demo TV"
+   ],
+   "home": {
+    "id": "9",
+    "abbreviation": "LAK",
+    "name": "Lakeside Loons",
+    "shortName": "Loons",
+    "color": "#3b82f6",
+    "logo": null,
+    "homeAway": "home",
+    "score": null,
+    "winner": null,
+    "record": "0-2",
+    "linescores": [],
+    "leaders": []
+   },
+   "away": {
+    "id": "10",
+    "abbreviation": "CAN",
+    "name": "Canyon Condors",
+    "shortName": "Condors",
+    "color": "#f43f5e",
+    "logo": null,
+    "homeAway": "away",
+    "score": null,
+    "winner": null,
+    "record": "2-2",
+    "linescores": [],
+    "leaders": []
+   },
+   "odds": null,
+   "prediction": {
+    "home": {
+     "id": "9",
+     "abbreviation": "LAK",
+     "name": "Lakeside Loons",
+     "logo": null,
+     "winProbability": 0.7127,
+     "modelWinProbability": 0.6636,
+     "fairMoneyLine": -248,
+     "projectedScore": 108.5,
+     "elo": 1537,
+     "netRating": 1.7,
+     "restDays": 2
+    },
+    "away": {
+     "id": "10",
+     "abbreviation": "CAN",
+     "name": "Canyon Condors",
+     "logo": null,
+     "winProbability": 0.2873,
+     "modelWinProbability": 0.3364,
+     "fairMoneyLine": 248,
+     "projectedScore": 100.3,
+     "elo": 1685,
+     "netRating": -3.8,
+     "restDays": 1
+    },
+    "predictedWinnerId": "9",
+    "projectedSpread": -8.2,
+    "projectedTotal": 208.8,
+    "homeCoverProbabilityAtMarket": null,
+    "overProbabilityAtMarket": null,
+    "confidence": "medium",
+    "factors": {
+     "eloSpread": 1.1,
+     "ratingSpread": 2.0,
+     "homeCourt": 1.7,
+     "restAdjustment": 0.5
+    },
+    "market": null
+   }
+  },
+  {
+   "id": "905",
+   "date": "2026-10-22T02:00Z",
+   "name": "Sunport Suns at Granite Giants",
+   "shortName": "SUN @ GRA",
+   "status": {
+    "state": "pre",
+    "name": "STATUS_SCHEDULED",
+    "detail": "7:30 PM ET",
+    "shortDetail": "7:30 PM ET",
+    "completed": false,
+    "period": 0,
+    "clock": "0:00"
+   },
+   "venue": {
+    "name": "Giants Arena",
+    "city": "Granite"
+   },
+   "broadcasts": [
+    "Demo TV"
+   ],
+   "home": {
+    "id": "11",
+    "abbreviation": "GRA",
+    "name": "Granite Giants",
+    "shortName": "Giants",
+    "color": "#64748b",
+    "logo": null,
+    "homeAway": "home",
+    "score": null,
+    "winner": null,
+    "record": "0-0",
+    "linescores": [],
+    "leaders": []
+   },
+   "away": {
+    "id": "12",
+    "abbreviation": "SUN",
+    "name": "Sunport Suns",
+    "shortName": "Suns",
+    "color": "#f59e0b",
+    "logo": null,
+    "homeAway": "away",
+    "score": null,
+    "winner": null,
+    "record": "3-2",
+    "linescores": [],
+    "leaders": []
+   },
+   "odds": null,
+   "prediction": {
+    "home": {
+     "id": "11",
+     "abbreviation": "GRA",
+     "name": "Granite Giants",
+     "logo": null,
+     "winProbability": 0.3852,
+     "modelWinProbability": 0.4079,
+     "fairMoneyLine": 160,
+     "projectedScore": 109.0,
+     "elo": 1686,
+     "netRating": 0.1,
+     "restDays": 1
+    },
+    "away": {
+     "id": "12",
+     "abbreviation": "SUN",
+     "name": "Sunport Suns",
+     "logo": null,
+     "winProbability": 0.6148,
+     "modelWinProbability": 0.5921,
+     "fairMoneyLine": -160,
+     "projectedScore": 112.8,
+     "elo": 1639,
+     "netRating": 2.9,
+     "restDays": 1
+    },
+    "predictedWinnerId": "12",
+    "projectedSpread": 3.8,
+    "projectedTotal": 221.8,
+    "homeCoverProbabilityAtMarket": 0.5139,
+    "overProbabilityAtMarket": 0.4928,
+    "confidence": "medium",
+    "factors": {
+     "eloSpread": 1.1,
+     "ratingSpread": 2.0,
+     "homeCourt": 1.7,
+     "restAdjustment": 0.5
+    },
+    "market": {
+     "homeWinProbability": 0.4746,
+     "awayWinProbability": 0.5254,
+     "bookmakerMargin": 0.045,
+     "homeSpread": 2.8,
+     "total": 218.8,
+     "edge": {
+      "home": -0.0894,
+      "away": 0.0894,
+      "valueSide": "away"
+     },
+     "spreadEdge": -2.5,
+     "totalEdge": 0.8
+    }
+   }
+  }
+ ],
+ "meta": {
+  "league": "nba",
+  "generatedAt": "2026-10-16T12:00:00Z",
+  "cacheTtlSeconds": 300,
+  "_note": "SAMPLE DATA for demo mode \u2013 fictional teams",
+  "date": "20261021",
+  "count": 6,
+  "record": {
+   "correct": 1,
+   "total": 2
+  }
+ }
+}

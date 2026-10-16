@@ -1,0 +1,375 @@
+{
+ "data": {
+  "season": 2027,
+  "simulations": 2000,
+  "remainingGames": 1200,
+  "teams": [
+   {
+    "team": {
+     "id": "2",
+     "abbreviation": "MES",
+     "name": "Mesa Coyotes",
+     "logo": null
+    },
+    "conference": "East",
+    "currentRecord": "2-1",
+    "projectedWins": 61,
+    "projectedLosses": 21,
+    "winsRange": {
+     "p10": 55,
+     "p50": 61,
+     "p90": 67
+    },
+    "elo": 1660,
+    "netRating": 7.4,
+    "probabilities": {
+     "bestRecord": 0.217,
+     "topSeed": 0.386,
+     "top6": 0.941,
+     "playIn": 0.006,
+     "makePlayoffs": 0.99,
+     "winFirstRound": 0.99,
+     "conferenceFinals": 0.745,
+     "finals": 0.459,
+     "champion": 0.242
+    }
+   },
+   {
+    "team": {
+     "id": "5",
+     "abbreviation": "IRN",
+     "name": "Ironton Forge",
+     "logo": null
+    },
+    "conference": "East",
+    "currentRecord": "2-1",
+    "projectedWins": 60,
+    "projectedLosses": 22,
+    "winsRange": {
+     "p10": 54,
+     "p50": 60,
+     "p90": 66
+    },
+    "elo": 1652,
+    "netRating": 7.0,
+    "probabilities": {
+     "bestRecord": 0.178,
+     "topSeed": 0.316,
+     "top6": 0.941,
+     "playIn": 0.006,
+     "makePlayoffs": 0.99,
+     "winFirstRound": 0.99,
+     "conferenceFinals": 0.613,
+     "finals": 0.376,
+     "champion": 0.198
+    }
+   },
+   {
+    "team": {
+     "id": "4",
+     "abbreviation": "BAY",
+     "name": "Bayview Pelicans",
+     "logo": null
+    },
+    "conference": "West",
+    "currentRecord": "2-1",
+    "projectedWins": 60,
+    "projectedLosses": 22,
+    "winsRange": {
+     "p10": 54,
+     "p50": 60,
+     "p90": 66
+    },
+    "elo": 1652,
+    "netRating": 7.0,
+    "probabilities": {
+     "bestRecord": 0.178,
+     "topSeed": 0.316,
+     "top6": 0.941,
+     "playIn": 0.006,
+     "makePlayoffs": 0.99,
+     "winFirstRound": 0.99,
+     "conferenceFinals": 0.613,
+     "finals": 0.376,
+     "champion": 0.198
+    }
+   },
+   {
+    "team": {
+     "id": "7",
+     "abbreviation": "SUM",
+     "name": "Summit Peaks",
+     "logo": null
+    },
+    "conference": "West",
+    "currentRecord": "2-1",
+    "projectedWins": 59,
+    "projectedLosses": 23,
+    "winsRange": {
+     "p10": 53,
+     "p50": 59,
+     "p90": 65
+    },
+    "elo": 1644,
+    "netRating": 6.7,
+    "probabilities": {
+     "bestRecord": 0.146,
+     "topSeed": 0.259,
+     "top6": 0.94,
+     "playIn": 0.007,
+     "makePlayoffs": 0.989,
+     "winFirstRound": 0.989,
+     "conferenceFinals": 0.506,
+     "finals": 0.308,
+     "champion": 0.162
+    }
+   },
+   {
+    "team": {
+     "id": "8",
+     "abbreviation": "RIV",
+     "name": "Riverbend Otters",
+     "logo": null
+    },
+    "conference": "East",
+    "currentRecord": "2-1",
+    "projectedWins": 55,
+    "projectedLosses": 27,
+    "winsRange": {
+     "p10": 49,
+     "p50": 55,
+     "p90": 61
+    },
+    "elo": 1612,
+    "netRating": 5.2,
+    "probabilities": {
+     "bestRecord": 0.065,
+     "topSeed": 0.116,
+     "top6": 0.922,
+     "playIn": 0.018,
+     "makePlayoffs": 0.971,
+     "winFirstRound": 0.655,
+     "conferenceFinals": 0.238,
+     "finals": 0.138,
+     "champion": 0.073
+    }
+   },
+   {
+    "team": {
+     "id": "3",
+     "abbreviation": "NOR",
+     "name": "Northfield Owls",
+     "logo": null
+    },
+    "conference": "West",
+    "currentRecord": "2-1",
+    "projectedWins": 54,
+    "projectedLosses": 28,
+    "winsRange": {
+     "p10": 48,
+     "p50": 54,
+     "p90": 60
+    },
+    "elo": 1604,
+    "netRating": 4.8,
+    "probabilities": {
+     "bestRecord": 0.054,
+     "topSeed": 0.095,
+     "top6": 0.915,
+     "playIn": 0.022,
+     "makePlayoffs": 0.963,
+     "winFirstRound": 0.587,
+     "conferenceFinals": 0.199,
+     "finals": 0.113,
+     "champion": 0.06
+    }
+   },
+   {
+    "team": {
+     "id": "9",
+     "abbreviation": "LAK",
+     "name": "Lakeside Loons",
+     "logo": null
+    },
+    "conference": "West",
+    "currentRecord": "2-1",
+    "projectedWins": 50,
+    "projectedLosses": 32,
+    "winsRange": {
+     "p10": 44,
+     "p50": 50,
+     "p90": 56
+    },
+    "elo": 1572,
+    "netRating": 3.3,
+    "probabilities": {
+     "bestRecord": 0.024,
+     "topSeed": 0.043,
+     "top6": 0.859,
+     "playIn": 0.057,
+     "makePlayoffs": 0.905,
+     "winFirstRound": 0.405,
+     "conferenceFinals": 0.1,
+     "finals": 0.051,
+     "champion": 0.027
+    }
+   },
+   {
+    "team": {
+     "id": "6",
+     "abbreviation": "PIN",
+     "name": "Pinecrest Rangers",
+     "logo": null
+    },
+    "conference": "East",
+    "currentRecord": "2-1",
+    "projectedWins": 48,
+    "projectedLosses": 34,
+    "winsRange": {
+     "p10": 42,
+     "p50": 48,
+     "p90": 54
+    },
+    "elo": 1556,
+    "netRating": 2.6,
+    "probabilities": {
+     "bestRecord": 0.016,
+     "topSeed": 0.029,
+     "top6": 0.809,
+     "playIn": 0.089,
+     "makePlayoffs": 0.852,
+     "winFirstRound": 0.345,
+     "conferenceFinals": 0.074,
+     "finals": 0.034,
+     "champion": 0.018
+    }
+   },
+   {
+    "team": {
+     "id": "12",
+     "abbreviation": "SUN",
+     "name": "Sunport Suns",
+     "logo": null
+    },
+    "conference": "West",
+    "currentRecord": "2-1",
+    "projectedWins": 47,
+    "projectedLosses": 35,
+    "winsRange": {
+     "p10": 41,
+     "p50": 47,
+     "p90": 53
+    },
+    "elo": 1548,
+    "netRating": 2.2,
+    "probabilities": {
+     "bestRecord": 0.013,
+     "topSeed": 0.023,
+     "top6": 0.777,
+     "playIn": 0.109,
+     "makePlayoffs": 0.818,
+     "winFirstRound": 0.319,
+     "conferenceFinals": 0.064,
+     "finals": 0.028,
+     "champion": 0.015
+    }
+   },
+   {
+    "team": {
+     "id": "10",
+     "abbreviation": "CAN",
+     "name": "Canyon Condors",
+     "logo": null
+    },
+    "conference": "East",
+    "currentRecord": "2-1",
+    "projectedWins": 41,
+    "projectedLosses": 41,
+    "winsRange": {
+     "p10": 35,
+     "p50": 41,
+     "p90": 47
+    },
+    "elo": 1500,
+    "netRating": 0.0,
+    "probabilities": {
+     "bestRecord": 0.004,
+     "topSeed": 0.007,
+     "top6": 0.475,
+     "playIn": 0.24,
+     "makePlayoffs": 0.5,
+     "winFirstRound": 0.172,
+     "conferenceFinals": 0.033,
+     "finals": 0.008,
+     "champion": 0.004
+    }
+   },
+   {
+    "team": {
+     "id": "1",
+     "abbreviation": "HBC",
+     "name": "Harbor City Sharks",
+     "logo": null
+    },
+    "conference": "West",
+    "currentRecord": "2-1",
+    "projectedWins": 39,
+    "projectedLosses": 43,
+    "winsRange": {
+     "p10": 33,
+     "p50": 39,
+     "p90": 45
+    },
+    "elo": 1484,
+    "netRating": -0.7,
+    "probabilities": {
+     "bestRecord": 0.003,
+     "topSeed": 0.005,
+     "top6": 0.359,
+     "playIn": 0.24,
+     "makePlayoffs": 0.378,
+     "winFirstRound": 0.128,
+     "conferenceFinals": 0.029,
+     "finals": 0.006,
+     "champion": 0.003
+    }
+   },
+   {
+    "team": {
+     "id": "11",
+     "abbreviation": "GRA",
+     "name": "Granite Giants",
+     "logo": null
+    },
+    "conference": "East",
+    "currentRecord": "2-1",
+    "projectedWins": 37,
+    "projectedLosses": 45,
+    "winsRange": {
+     "p10": 31,
+     "p50": 37,
+     "p90": 43
+    },
+    "elo": 1468,
+    "netRating": -1.5,
+    "probabilities": {
+     "bestRecord": 0.002,
+     "topSeed": 0.003,
+     "top6": 0.255,
+     "playIn": 0.24,
+     "makePlayoffs": 0.269,
+     "winFirstRound": 0.091,
+     "conferenceFinals": 0.026,
+     "finals": 0.004,
+     "champion": 0.002
+    }
+   }
+  ]
+ },
+ "meta": {
+  "league": "nba",
+  "generatedAt": "2026-10-16T12:00:00Z",
+  "cacheTtlSeconds": 3600,
+  "_note": "SAMPLE DATA for demo mode \u2013 fictional teams"
+ }
+}

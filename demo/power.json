@@ -1,0 +1,214 @@
+{
+ "data": [
+  {
+   "rank": 1,
+   "team": {
+    "id": "2",
+    "abbreviation": "MES",
+    "name": "Mesa Coyotes",
+    "logo": null
+   },
+   "powerScore": 68.0,
+   "elo": 1660,
+   "eloChange": 22,
+   "netRating": 7.4,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "L1",
+   "strengthOfSchedule": 1.1
+  },
+  {
+   "rank": 2,
+   "team": {
+    "id": "5",
+    "abbreviation": "IRN",
+    "name": "Ironton Forge",
+    "logo": null
+   },
+   "powerScore": 65.7,
+   "elo": 1652,
+   "eloChange": -7,
+   "netRating": 7.0,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "W2",
+   "strengthOfSchedule": -0.02
+  },
+  {
+   "rank": 3,
+   "team": {
+    "id": "4",
+    "abbreviation": "BAY",
+    "name": "Bayview Pelicans",
+    "logo": null
+   },
+   "powerScore": 63.4,
+   "elo": 1652,
+   "eloChange": 14,
+   "netRating": 7.0,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "W1",
+   "strengthOfSchedule": 1.1
+  },
+  {
+   "rank": 4,
+   "team": {
+    "id": "7",
+    "abbreviation": "SUM",
+    "name": "Summit Peaks",
+    "logo": null
+   },
+   "powerScore": 61.1,
+   "elo": 1644,
+   "eloChange": 5,
+   "netRating": 6.7,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "W2",
+   "strengthOfSchedule": 0.86
+  },
+  {
+   "rank": 5,
+   "team": {
+    "id": "8",
+    "abbreviation": "RIV",
+    "name": "Riverbend Otters",
+    "logo": null
+   },
+   "powerScore": 58.8,
+   "elo": 1612,
+   "eloChange": 4,
+   "netRating": 5.2,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "W1",
+   "strengthOfSchedule": 0.26
+  },
+  {
+   "rank": 6,
+   "team": {
+    "id": "3",
+    "abbreviation": "NOR",
+    "name": "Northfield Owls",
+    "logo": null
+   },
+   "powerScore": 56.5,
+   "elo": 1604,
+   "eloChange": -16,
+   "netRating": 4.8,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "L1",
+   "strengthOfSchedule": -0.41
+  },
+  {
+   "rank": 7,
+   "team": {
+    "id": "9",
+    "abbreviation": "LAK",
+    "name": "Lakeside Loons",
+    "logo": null
+   },
+   "powerScore": 54.2,
+   "elo": 1572,
+   "eloChange": -1,
+   "netRating": 3.3,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "L1",
+   "strengthOfSchedule": -0.71
+  },
+  {
+   "rank": 8,
+   "team": {
+    "id": "6",
+    "abbreviation": "PIN",
+    "name": "Pinecrest Rangers",
+    "logo": null
+   },
+   "powerScore": 51.9,
+   "elo": 1556,
+   "eloChange": 0,
+   "netRating": 2.6,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "L1",
+   "strengthOfSchedule": 0.45
+  },
+  {
+   "rank": 9,
+   "team": {
+    "id": "12",
+    "abbreviation": "SUN",
+    "name": "Sunport Suns",
+    "logo": null
+   },
+   "powerScore": 49.6,
+   "elo": 1548,
+   "eloChange": 19,
+   "netRating": 2.2,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "W2",
+   "strengthOfSchedule": -0.08
+  },
+  {
+   "rank": 10,
+   "team": {
+    "id": "10",
+    "abbreviation": "CAN",
+    "name": "Canyon Condors",
+    "logo": null
+   },
+   "powerScore": 47.3,
+   "elo": 1500,
+   "eloChange": -2,
+   "netRating": 0.0,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "L1",
+   "strengthOfSchedule": 0.51
+  },
+  {
+   "rank": 11,
+   "team": {
+    "id": "1",
+    "abbreviation": "HBC",
+    "name": "Harbor City Sharks",
+    "logo": null
+   },
+   "powerScore": 45.0,
+   "elo": 1484,
+   "eloChange": 11,
+   "netRating": -0.7,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "L1",
+   "strengthOfSchedule": 0.95
+  },
+  {
+   "rank": 12,
+   "team": {
+    "id": "11",
+    "abbreviation": "GRA",
+    "name": "Granite Giants",
+    "logo": null
+   },
+   "powerScore": 42.7,
+   "elo": 1468,
+   "eloChange": 4,
+   "netRating": -1.5,
+   "record": "2-1",
+   "last10": "2-1",
+   "streak": "L1",
+   "strengthOfSchedule": -0.68
+  }
+ ],
+ "meta": {
+  "league": "nba",
+  "generatedAt": "2026-10-16T12:00:00Z",
+  "cacheTtlSeconds": 300,
+  "_note": "SAMPLE DATA for demo mode \u2013 fictional teams"
+ }
+}
